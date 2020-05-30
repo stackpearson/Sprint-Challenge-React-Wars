@@ -9,7 +9,7 @@ const Characters = () => {
         axios
           .get('https://rickandmortyapi.com/api/character/')
           .then(response => {
-            console.log('API from Characters',response.data.results);
+            // console.log('API from Characters',response.data.results);
             setCharData(response.data.results);
           })
           .catch(error => console.log("you goofed", error));
